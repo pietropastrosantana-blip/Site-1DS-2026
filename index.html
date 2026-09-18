@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu blog</title>
+<style>
+header{
+background-color:#0e045e;
+color: aliceblue;
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+}
+
+main{
+background-color:#dfdfe4;
+color: rgb(11, 2, 54);
+text-align: center;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+}
+
+img{
+width: 80px;
+height: 80px;
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>Clube de Ciências Paulo Sérgio Bretones</h1>
+<p>Venha se apaixonar por Astronomia</p>
+</header>
+
+<main>
+<img src="imagem-blog.png" alt="Três jovens do clube de ciências observam o céu noturno estrelado ao lado de um telescópio. No topo da imagem, lê-se o título "Clube de Ciências: Astronomia">
+<h2>Meu primeiro post</h2>
+<p>Sejam bem vindos ao Clube de Ciência do colégio Branca da Mota</p>
+<p>Por: Flávia Henrique</p>
+</main>
+
+</body>
+</html>
+assignment
+Atividade: "Rec. HTML, CSS, JS"
+FLAVIA DE MARIA HENRIQUE TOKUMOTO postou uma nova atividade pelo Wayground (formerly Quizizz): Rec. HTML, CSS, JS
+Criado em: 11 de set.11 de set.
+
+Postada por FLAVIA DE MARIA HENRIQUE TOKUMOTO
+FLAVIA DE MARIA HENRIQUE TOKUMOTO
+Criado em: 21 de mai.21 de mai.
+Código do projeto Quente e Frio - P5JS (para copiar)
+
+let x;
+let y;
+
+function setup() {
+  createCanvas(400, 400);
+  x = random (400);
+  x = int(x);
+  y = random(400);
+  y = int (y);
+}
+
+function draw() {
+  background("blue");
+  x = x +random(-5, 5);
+  y = y + random( -5, 5);
+  x = constrain(x,0,400);
+  y = constrain(y,0,400);
+  let distancia;
+  distancia = dist(mouseX,mouseY, x,y);
+  fill("orange");
+  circle (mouseX, mouseY, x, y );
+  //circle(x, y, 10);
+ 
+  if(distancia < 10){
+    text('Achei você!', 200, 200);
+    noLoop();
+  }
+}
