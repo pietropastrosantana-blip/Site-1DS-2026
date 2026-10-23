@@ -1,51 +1,103 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu blog</title>
+  <title>Clube do Livro</title>
+
   <style>
-    header {
-      background-color: #0e045e;
-      color: aliceblue;
+    body {
+      font-family: Georgia, serif;
+      background: #f5ead8;
+      color: #553626;
       text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 16px;
+      margin: 0;
+    }
+
+    header, footer {
+      background: #553626;
+      color: white;
+      padding: 15px;
     }
 
     main {
-      background-color: #dfdfe4;
-      color: rgb(11, 2, 54);
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 16px;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
     }
 
-    img {
-      width: 80px;
-      height: 80px;
+    section {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #553626;
+      color: white;
+      padding: 10px 16px;
+      margin: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .botao:hover {
+      background: #80563e;
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <h1>Clube de Ciências Paulo Sérgio Bretones</h1>
-    <p>Venha se apaixonar por Astronomia</p>
+    <h1>📚 Clube do Livro</h1>
+    <p>Descubra o prazer da leitura!</p>
   </header>
 
   <main>
-    <img src="vitudev.png"
-      alt="Três jovens do clube de ciências observam o céu noturno estrelado ao lado de um telescópio. No topo da imagem, lê-se o título "
-      Clube de Ciências: Astronomia">
-    <h2>Meu primeiro post</h2>
-    <p>Sejam bem vindos ao Clube de Ciência do colégio Branca da Mota</p>
-    <p>Por: Flávia Henrique</p>
+    <h2>Viaje sem sair do lugar!</h2>
+    <p>Leia, imagine, aprenda e descubra novos mundos.</p>
+
+    <section>
+      <h3>📖 Autores clássicos</h3>
+      <p>Machado de Assis — Dom Casmurro</p>
+      <p>Jane Austen — Orgulho e Preconceito</p>
+      <p>Dostoiévski — Crime e Castigo</p>
+      <p>Franz Kafka — A Metamorfose</p>
+      <p>Liev Tolstói — Anna Kariênina</p>
+    </section>
+<img src="foto.jpg">
+    <section>
+      <h3>✨ Autores modernos</h3>
+      <p>J. K. Rowling — Harry Potter</p>
+      <p>Itamar Vieira Junior — Torto Arado</p>
+      <p>Ali Hazelwood — A Hipótese do Amor</p>
+      <p>Colleen Hoover — É Assim que Acaba</p>
+      <p>Raphael Montes — Jantar Secreto</p>
+      <p>Freida McFadden — A Empregada</p>
+    </section>
+
+    <section id="mec-livros">
+      <h3>📱 MEC Livros</h3>
+      <p>Explore livros digitais e descubra novas leituras.</p>
+      <a class="botao"
+         href="https://livros.mec.gov.br/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Acessar o MEC Livros
+      </a>
+    </section>
+
+    <h2>❤️ Vamos ler juntos?</h2>
+    <p>Compartilhe suas leituras e descubra novas histórias!</p>
   </main>
 
-</body>
+  <footer>
+    <p>Clube do Livro — Ler é viajar sem sair do lugar! ❤️</p>
+  </footer>
 
+</body>
 </html>
